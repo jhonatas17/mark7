@@ -15,7 +15,7 @@ Funcionalidade: Cadastro de usuários
             | email | jhonatas@qaninja.net |
             | senha | 123456               |
         Quando faço o meu cadastro 
-        Então vejo a mensagem "Olá, Fernando"
+        Então vejo a mensagem "Olá, Jhonatas"
   
     Cenario: Senha com minimo de caracteres
 
@@ -30,7 +30,7 @@ Funcionalidade: Cadastro de usuários
 
         E possuo os seguintes dados:
         | nome  | Jhonatas             |
-        | email | jhonatas@qaninja.net |
+        | email | jhonatassqaninja.net |
         | senha | 123456               |
         Quando faço o meu cadastro
         Então vejo a mensagem de alerta "Informe um email válido."
