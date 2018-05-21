@@ -35,7 +35,7 @@ Funcionalidade: Cadastro de usuários
         Quando faço o meu cadastro
         Então vejo a mensagem de alerta "Informe um email válido."
 
-    @limpa_usuario
+    @limpa_usuario @duplicado
     Cenario: Cadastro duplicado
 
         E possuo os seguintes dados:

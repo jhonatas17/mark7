@@ -9,7 +9,7 @@ Funcionalidade: Login
     Contexto: Formulário
         Dado que acessei o formulário de login
 
-    @logout
+    @logout @login
     Cenario: Login do usuário
 
         Quando faço login com "jhonatas@qaninja.net" e "123456"
@@ -18,7 +18,7 @@ Funcionalidade: Login
     Esquema do Cenario: Dados inválidos
         
         Quando faço login com "<email>" e "<senha>"
-        Então vejo a mensagem de alerta "<saida>"
+        Então vejo a mensagem de alerta de login "<saida>"
 
     
     Exemplos:
