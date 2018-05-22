@@ -7,10 +7,10 @@ Before  do
 end
 
 
-Before('@limpa_usuario') do
-    visit '/api/reset/jhonatas@qaninja.net?clean=full'
-    visit '/api/reset/jhonatas@qaninja.net?clean=full'
-end
+#Before('@limpa_usuario') do
+#    visit '/api/reset/jhonatas@qaninja.net?clean=full'
+#    visit '/api/reset/jhonatas@qaninja.net?clean=full'
+#end
 
 After('@logout') do
     visit '/logout'
