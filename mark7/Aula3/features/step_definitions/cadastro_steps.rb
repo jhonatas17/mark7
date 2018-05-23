@@ -4,7 +4,7 @@ end
 
 Dado('possuo os seguintes dados:') do |table|
     @usuario = table.rows_hash
-    remove_usuario(@usuario[:email])
+    DAO.new.remover_usuario(@usuario[:email])
 end
 
 Dado('ja existe um cadastro para o email informado') do
