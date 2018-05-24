@@ -17,4 +17,4 @@ class CadastroPage < SitePrism::Page
         campo_senha.set usuario[:senha]
         botao_cadastrar.click
     end
-end   
+end

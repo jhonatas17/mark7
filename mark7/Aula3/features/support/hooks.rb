@@ -3,6 +3,7 @@
 Before  do
     @cadastro_page = CadastroPage.new
     @login_page = LoginPage.new
+    @tarefas_page = TarefasPage.new
     @navbar = Navbar.new
 end
 

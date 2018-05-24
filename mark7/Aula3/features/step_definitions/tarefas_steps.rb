@@ -9,11 +9,11 @@ Dado("que o nome da tarefa é {string}") do |nome_tarefa|
   
   Dado("eu quero taguear esta tarefa com:") do |table_tags|
      @tags = table_tags.hashes
-     puts @tags
   end
   
   Quando("faço o cadastro desta tarefa") do
-    pending # Write code here that turns the phrase above into concrete actions
+    @tarefas_page.botao_adicionar.click
+    @tarefas_page.adicionar.nova(@nome_tarefa, @data_conclusao, @tags)
   end
   
   Então("devo ver esta tarefa na lista com o status {string}") do |status_tarefa|
