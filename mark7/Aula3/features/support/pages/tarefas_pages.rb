@@ -22,7 +22,6 @@ class Adicionar < SitePrism::Section
     end    
 end    
 
-
 # Representa a pagina principal onde temos a lista de tarefas
 class TarefasPage < SitePrism::Page
     element :botao_adicionar, '#insert-button'

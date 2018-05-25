@@ -1,7 +1,7 @@
 
   Dado("que o nome da tarefa é {string}") do |nome_tarefa|
     @nome_tarefa = nome_tarefa
-    DAO.new_remover_tarefas(@nome_tarefa)
+    DAO.new.remover_tarefas(@nome_tarefa)
   end
   
   Dado("a data de conclusão é {string}") do |data_conclusao|

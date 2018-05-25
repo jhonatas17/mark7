@@ -33,4 +33,4 @@ Funcionalidade: Cadastrar tarefas
             | go      |
         Mas eu já cadastrei esta tarefa e não tinha percebido
         Quando faço o cadastro desta tarefa
-        Então devo ver a mensagem "Tarefa duplicado." ao tentar cadastrar  
+        Então devo ver a mensagem "Tarefa duplicada." ao tentar cadastrar  
