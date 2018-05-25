@@ -5,6 +5,7 @@ class Adicionar < SitePrism::Section
     element :campo_data, '#dueDate'
     element :campo_tags, '.bootstrap-tagsinput input'
     element :botao_cadastrar, '#form-submit-button'
+    element :alerta, '.alert-warn'
 
     def nova(nome, data_tarefa, tags)
         campo_nome.set nome
@@ -25,6 +26,5 @@ end
 # Representa a pagina principal onde temos a lista de tarefas
 class TarefasPage < SitePrism::Page
     element :botao_adicionar, '#insert-button'
-
     section :adicionar, Adicionar, '#add-task-view'
 end    

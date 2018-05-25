@@ -13,6 +13,11 @@ class DAO
 
     def remover_usuario(email)
         users = @client[:users]
-        users.delete_one('profile:email' => email)
+        users.delete_one('profile:email' => email) #delte_one apaga somente 1 com a condição
     end    
+
+    def remover_tarefas(nome)
+        tasks = @client[:tasks]
+        tasks.delete_many('title' => nome) #delete_many apaga todos os registros com a condição 
+    end   
 end    

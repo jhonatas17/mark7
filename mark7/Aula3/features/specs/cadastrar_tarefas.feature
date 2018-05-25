@@ -19,7 +19,7 @@ Funcionalidade: Cadastrar tarefas
         Quando faço o cadastro desta tarefa
         Então devo ver esta tarefa na lista com o status "Em andamento"   
 
-    #@autenticado @logout @tarefa_duplicada
+    @autenticado @logout @tarefa_duplicada
     Cenario: Tarefa não pode ser duplicada
 
        Dado que o nome da tarefa é "Ler um livro de Go"
