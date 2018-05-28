@@ -24,6 +24,17 @@ end
 
 # Representa a pagina principal onde temos a lista de tarefas
 class TarefasPage < SitePrism::Page
+    set_url '/tasks'
     element :botao_adicionar, '#insert-button'
+    element :campo_busca, 'input[placeholder=Buscar]'
+    element :botao_busca, '#search-button'
+
+    elements :lista, 'table tbody tr'
+
     section :adicionar, Adicionar, '#add-task-view'
+
+        def busca(valor)
+            campo_busca.set valor
+            botao_busca.click
+        end    
 end    

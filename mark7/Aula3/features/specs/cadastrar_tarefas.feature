@@ -5,7 +5,7 @@ Funcionalidade: Cadastrar tarefas
     Sendo um usuário cadastrado
     Posso cadastrar nova tarefas
 
-    @autenticado @logout
+    @autenticado @logout @doing
     Cenario: Nova tarefa
 
         Dado que o nome da tarefa é "Ler um livro de mongodb"
@@ -17,7 +17,8 @@ Funcionalidade: Cadastrar tarefas
             | livro   |
             | leitura |
         Quando faço o cadastro desta tarefa
-        Então devo ver esta tarefa na lista com o status "Em andamento"   
+        Então devo ver esta tarefa na lista com o status "Em andamento"
+        E devo ver também somente 1 tarefa o nome cadastrado
 
     @autenticado @logout @tarefa_duplicada
     Cenario: Tarefa não pode ser duplicada
@@ -34,3 +35,4 @@ Funcionalidade: Cadastrar tarefas
         Mas eu já cadastrei esta tarefa e não tinha percebido
         Quando faço o cadastro desta tarefa
         Então devo ver a mensagem "Tarefa duplicada." ao tentar cadastrar  
+        E devo ver também somente 1 tarefa o nome cadastrado

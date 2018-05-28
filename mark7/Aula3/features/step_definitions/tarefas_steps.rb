@@ -32,3 +32,9 @@
       res =  @tarefas_page.adicionar.alerta.text
       expect(res).to eql mensagem_alerta
   end
+
+  Então("devo ver também somente {int} tarefa o nome cadastrado") do |quantidade|
+    @tarefas_page.load
+    @tarefas_page.busca(@nome_tarefa)
+    expect(@tarefas_page.lista.size).to eql quantidade
+  end
