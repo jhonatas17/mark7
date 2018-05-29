@@ -19,7 +19,12 @@ end
 #end
 
 After('@logout') do
-    visit '/logout'
-    sleep 2
+    @navbar.deslogar
+    @login_page.wait_for_campo_email
 end
+
+After do |scenario|
+    
+end
+
 

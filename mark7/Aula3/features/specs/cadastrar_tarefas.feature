@@ -5,7 +5,7 @@ Funcionalidade: Cadastrar tarefas
     Sendo um usuário cadastrado
     Posso cadastrar nova tarefas
 
-    @autenticado @logout @doing
+    @autenticado @logout
     Cenario: Nova tarefa
 
         Dado que o nome da tarefa é "Ler um livro de mongodb"

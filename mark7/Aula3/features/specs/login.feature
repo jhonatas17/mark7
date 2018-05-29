@@ -9,7 +9,7 @@ Funcionalidade: Login
     Contexto: Formulário
         Dado que acessei o formulário de login
 
-    @logout @login
+    @logout @login @smoke
     Cenario: Login do usuário
 
         Quando faço login com "jhonatas@qaninja.net" e "123456"
