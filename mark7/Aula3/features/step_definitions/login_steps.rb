@@ -9,6 +9,7 @@ end
   
 Então("sou autenticado com sucesso") do
     expect(@navbar.nav).to have_content @email
+    @tarefas_page.wait_for_lista
 end 
 
 Então('vejo a mensagem de alerta de login {string}') do |mensagem_alerta|

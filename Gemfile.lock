@@ -69,7 +69,7 @@ GEM
     selenium-webdriver (3.12.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
-    site_prism (2.13)
+    site_prism (2.12)
       addressable (~> 2.4)
       capybara (~> 2.12)
     xpath (3.0.0)
@@ -81,12 +81,12 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  capybara
+  capybara (= 2.18.0)
   cucumber
   mongo (~> 2.2, >= 2.2.5)
   rspec
   selenium-webdriver
-  site_prism
+  site_prism (= 2.12)
 
 BUNDLED WITH
    1.16.1
