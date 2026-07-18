@@ -1,13 +1,16 @@
 # Software
 class Conta
   attr_accessor :saldo
+  MAX_SAQUE = 700
 
   def initialize(saldo)
     @saldo = saldo
   end
 
   def saca(valor)
-    if valor > @saldo
+    if valor > MAX_SAQUE
+      "Valor máximo para saque deve ser de R$ #{MAX_SAQUE}"
+    elsif valor > @saldo
       'Saldo insuficiente para saque.'
     else
       @saldo -= valor

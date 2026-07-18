@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Ruby/Bundle
+*.gem
+*.gemspec
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Test artifacts
+/log/
+/tmp/
+*.log
+spec/examples.txt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.DS_Store
+*.sublime-workspace
+*.sublime-project

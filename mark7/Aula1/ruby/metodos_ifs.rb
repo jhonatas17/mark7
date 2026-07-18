@@ -17,7 +17,7 @@ def achou_bug(resposta)
   when 1
     puts 'Informe o desenvolvedor.'
   when 0
-    puts 'Beleza. Pode ir para producão.'
+    puts 'Beleza. Pode ir para produção.'
   else
     puts 'Código incorreto.'
   end
